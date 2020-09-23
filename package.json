@@ -1,0 +1,21 @@
+{
+  "name": "pojo",
+  "version": "1.0.0",
+  "description": "Discord bot named POJO",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Discord",
+    "Bot"
+  ],
+  "author": "Roald Koning",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.3"
+  }
+}
