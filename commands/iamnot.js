@@ -1,16 +1,18 @@
-const { allowedRoles } = require('../config.json');
+const { prefix, allowedRoles } = require('../config.json');
 
 module.exports = {
 	name: 'iamnot',
     description: 'iamnot <@role> deletes this role for the current user',
     args: true,
+    numberOfArguments: 1,
     usage: '<@role>',
 	execute(message, args) {
 		if (!message.mentions.roles.size) {
-            return message.reply('you need to tag a role in order to get it!');
-        }
-        if (!args.length > 1) {
-            return message.channel.send(`Please specify only one <@role> as argument, ${message.author}!`);
+            let reply = `You didn't provide correct arguments, ${message.author}!`;
+            if (this.usage) {
+                reply += `\nThe proper usage would be: \`${prefix}${this.name} ${this.usage}\``;
+            }
+            return message.channel.send(reply);
         }
 
         let role = message.member.roles.cache

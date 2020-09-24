@@ -4,7 +4,8 @@
   "description": "Discord bot named POJO",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node index.js"
   },
   "keywords": [
     "Discord",

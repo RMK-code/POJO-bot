@@ -1,5 +1,5 @@
 {
-	"prefix": ",",
+    "prefix": ",",
     "token": "token_of_bot_here",
     "allowedRoles": ["java beginner", "java advanced", "java expert"]
 }
