@@ -25,3 +25,6 @@
   - Commit your changes frequently
   - Add pull request in GitHub and link it to the Issue
   - Don't make pull requests too big because they are potentially difficult to review and merge
+
+### Contact
+- NLdProd#0548 on Discrod
