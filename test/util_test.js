@@ -14,6 +14,6 @@ describe('getCommandFromArguments', function() {
     msg = {content: ',IAM my_argument_1,    my_argument_2'};
     args = getArgumentsFromMessage(msg);
     cmd = getCommandFromArguments(args)
-    assert.strictEqual('iam', cmd);
+    assert.strictEqual('iam_faile', cmd);
   });
 });
